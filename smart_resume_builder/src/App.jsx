@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import { initialResumeData } from './components/data/resume_data';
+import ResumePreview from './components/preview/resume_preview';
 
 const App = () => {
 
@@ -26,8 +27,10 @@ const App = () => {
       onChange={handelFullNameChange}
       placeholder='Enter Full Name'
        />
-
-       <p className='mt-6'>Full Name : {resumeData.personal_info.full_name || ""}</p>
+       <div className='flex-3'>
+        <ResumePreview data={resumeData}/>
+        
+        </div>       
     </div>
   )
 }

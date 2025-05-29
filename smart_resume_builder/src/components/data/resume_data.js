@@ -1,4 +1,4 @@
-export const resume_data = {
+export const initialResumeData = {
 
     personal_info : {
         full_name : "",
